@@ -1,0 +1,67 @@
+@import tailwindcss;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Atlassian Sans Latin', atlassian-sans-latin;
+    width: 100dvw;
+    background-color: #dfdff0;
+    overflow-x: hidden;
+}
+
+.hover-gradient-black-gray-black:hover {
+  background-image: linear-gradient(to right, black, gray-400, black);
+}
+
+@layer base {
+    @font-face {
+        font-family: 'gilroy-bold-2';
+        src:url('/fonts/Gilroy-Bold.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'gilroy-bold';
+        src:url('/fonts/Gilroy-Bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'gilroy-medium-2';
+        src:url('/fonts/Gilroy-Medium.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'gilroy-medium';
+        src:url('/fonts/Gilroy-Medium.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'gilroy-regular-2';
+        src:url('/fonts/Gilroy-Regular.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'gilroy-regular';
+        src:url('/fonts/Gilroy-Regular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'gilroy-semi-bold';
+        src:url('/fonts/Gilroy-SemiBold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'denton-extra-bold-2';
+        src:url('/fonts/Denton-ExtraBold.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'denton-extra-bold';
+        src:url('/fonts/Denton-ExtraBold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'atlassian-sans-latin';
+        src:url('/fonts/AtlassianSans-latin.woff2') format('woff2');
+    }
+}
