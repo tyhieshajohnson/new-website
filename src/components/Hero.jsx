@@ -6,8 +6,11 @@ const Hero = () => {
     const [isImageLoaded, setIsImageLoaded] = useState(false);
 
     useEffect(() => {
+        // Load the appropriate fallback image based on screen size
         const img = new Image();
-        img.src = "/img/desktop/hero-fold-desktop-fallback.jpg";
+        const fallbackImage = window.innerWidth < 768 ? "/img/mobile/hero-fold-mobile-fallback.jpg" :
+        "/img/desktop/hero-fold-desktop-fallback.jpg";
+        img.src = fallbackImage;
         img.onload = () => {
             setIsImageLoaded(true);
         };
@@ -28,10 +31,9 @@ const Hero = () => {
     return (
         <div className="relative h-dvh w-screen overflow-x-hidden">
             <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden">
+                {/* Responsive video source based on screen size */}
                 <video
                     ref={videoRef}
-                    src="/videos/desktop/hero-fold-desktop-video-1.mp4"
-                    id="current-video"
                     className={`h-full w-full object-cover object-center transition-opacity duration-500 ${
                         videoEnded ? 'opacity-0' : 'opacity-100'
                     }`}
@@ -40,10 +42,24 @@ const Hero = () => {
                     playsInline
                     muted
                     autoPlay
-                />
+                >
+                    {/* Different video sources for different screen sizes */}
+                    <source
+                        src="/videos/desktop/hero-fold-desktop-video-1.mp4"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        src="/videos/mobile/hero-fold-mobile.mp4"
+                        media="(max-width: 767px)"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+
+                {/* Responsive fallback image based on screen size */}
                 {isImageLoaded && (
                     <img
-                        src="/img/desktop/hero-fold-desktop-fallback.jpg"
+                        src={window.innerWidth < 768 ? "/img/mobile/hero-fold-mobile-fallback.jpg" :
+                            "/img/desktop/hero-fold-desktop-fallback.jpg"}
                         alt="Video thumbnail"
                         className={`h-full w-full object-cover object-center absolute top-0 left-0 transition-opacity
                             duration-500 ${

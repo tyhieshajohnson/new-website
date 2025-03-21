@@ -17,6 +17,10 @@ body {
     overflow-x: hidden;
 }
 
+.hover-gradient-black-gray-black:hover {
+    background-image: linear-gradient(to right, black, gray-400, black);
+}
+
 .jWXgbn {
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
@@ -24,10 +28,6 @@ body {
     height: 100vh;
     -webkit-box-pack: center;
     justify-content: center;
-}
-
-.hover-gradient-black-gray-black:hover {
-  background-image: linear-gradient(to right, black, gray-400, black);
 }
 
 .yhFLh {
@@ -68,6 +68,44 @@ body {
     line-height: 36px;
     opacity: 0.6;
     white-space: pre-line;
+}
+
+@media screen and (max-width: 767px) {
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    .yhFLh {
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        display: flex
+    ;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cMHqyL {
+        font-size: 12px;
+        letter-spacing: 3px;
+        line-height: 16px;
+    }
+
+    .AzLpJ {
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: -0.3px;
+        line-height: 46px;
+    }
+
+    .eLnQK {
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        line-height: 26px;
+    }
 }
 
 @layer base {
