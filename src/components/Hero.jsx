@@ -6,7 +6,6 @@ const Hero = () => {
     const [isImageLoaded, setIsImageLoaded] = useState(false);
 
     useEffect(() => {
-        // Load the appropriate fallback image based on screen size
         const img = new Image();
         const fallbackImage = window.innerWidth < 768 ? "/img/mobile/hero-fold-mobile-fallback.jpg" :
         "/img/desktop/hero-fold-desktop-fallback.jpg";
@@ -31,7 +30,6 @@ const Hero = () => {
     return (
         <div className="relative h-dvh w-screen overflow-x-hidden">
             <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden">
-                {/* Responsive video source based on screen size */}
                 <video
                     ref={videoRef}
                     className={`h-full w-full object-cover object-center transition-opacity duration-500 ${
@@ -43,7 +41,6 @@ const Hero = () => {
                     muted
                     autoPlay
                 >
-                    {/* Different video sources for different screen sizes */}
                     <source
                         src="/videos/desktop/hero-fold-desktop-video-1.mp4"
                         media="(min-width: 768px)"
@@ -55,7 +52,6 @@ const Hero = () => {
                     Your browser does not support the video tag.
                 </video>
 
-                {/* Responsive fallback image based on screen size */}
                 {isImageLoaded && (
                     <img
                         src={window.innerWidth < 768 ? "/img/mobile/hero-fold-mobile-fallback.jpg" :
