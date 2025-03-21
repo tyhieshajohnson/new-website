@@ -4,14 +4,70 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Atlassian Sans Latin', atlassian-sans-latin;
-    width: 100dvw;
-    background-color: #dfdff0;
+    font-family: gilroy-regular;
+    font-variant-ligatures: none;
+    min-height: var(--100vh, 100vh);
+    max-height: -webkit-fill-available;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: env(safe-area-inset-top);
     overflow-x: hidden;
+}
+
+.jWXgbn {
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
 
 .hover-gradient-black-gray-black:hover {
   background-image: linear-gradient(to right, black, gray-400, black);
+}
+
+.yhFLh {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex
+;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cMHqyL {
+    font-family: gilroy-medium;
+    font-weight: initial;
+    font-size: 17px;
+    letter-spacing: 4px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: rgb(108, 108, 108);
+    white-space: pre-wrap;
+}
+
+.AzLpJ {
+    font-family: denton;
+    font-size: 88px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    line-height: 87px;
+}
+
+.eLnQK {
+    font-family: gilroy;
+    font-size: 20px;
+    font-weight: initial;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+    opacity: 0.6;
+    white-space: pre-line;
 }
 
 @layer base {
@@ -28,6 +84,9 @@ body {
     @font-face {
         font-family: 'gilroy-medium-2';
         src:url('/fonts/Gilroy-Medium.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -53,6 +112,9 @@ body {
     @font-face {
         font-family: 'denton-extra-bold-2';
         src:url('/fonts/Denton-ExtraBold.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
