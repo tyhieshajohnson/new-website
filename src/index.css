@@ -232,6 +232,97 @@ body {
     white-space: pre-line;
 }
 
+.mshjJ {
+    position: absolute;
+    width: 85%;
+    background: rgb(207, 207, 207);
+    height: 2px;
+}
+
+.VzfKH {
+    margin-top: 50px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex
+;
+    text-align: center;
+}
+
+.kQQkFl {
+    width: 60%;
+    text-align: left;
+}
+
+.jidhBR {
+    width: 70px;
+    height: 70px;
+}
+
+.ghNafr {
+    margin-bottom: calc(20px);
+}
+
+.AzLpJ {
+    font-family: denton;
+    font-weight: 800;
+}
+
+.hTFIyf {
+    background: linear-gradient(170deg, rgb(0, 0, 0), rgb(85, 85, 85)) text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bWosiJ {
+    font-size: 76px;
+    letter-spacing: -0.4px;
+    line-height: 70px;
+    max-width: 70%;
+}
+
+.uyHJB {
+    width: 40%;
+    text-align: left;
+}
+
+.eLnQK {
+    font-family: gilroy;
+    font-size: 20px;
+    font-weight: initial;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+    opacity: 0.6;
+    white-space: pre-line;
+}
+
+.ghNafr {
+    margin-bottom: calc(20px);
+}
+
+.eLnQK {
+    font-family: gilroy;
+    font-size: 20px;
+    font-weight: initial;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+    opacity: 0.6;
+    white-space: pre-line;
+}
+
+.kkfHeq {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.bTEqWy {
+    display: flex
+;
+    padding: 125px;
+}
+
 @media screen and (max-width: 767px) {
     p {
         display: block;
@@ -267,6 +358,36 @@ body {
         font-size: 14px;
         letter-spacing: 0.1px;
         line-height: 26px;
+    }
+
+    .kkfHeq {
+        padding: 50px 30px;
+    }
+
+    .jidhBR {
+        width: 55px;
+        height: 55px;
+    }
+
+    .bWosiJ {
+        font-size: 40px;
+        letter-spacing: -0.3px;
+        line-height: 39px;
+    }
+
+    .eLnQK {
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        line-height: 26px;
+    }
+
+    .uyHJB {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .kkfHeq {
+        padding: 50px 30px;
     }
 }
 

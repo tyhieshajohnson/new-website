@@ -8,6 +8,7 @@ import Cards from './components/Cards';
 import Carousel from './components/Carousel';
 import Spending from './components/Spending';
 import Perks from './components/Perks';
+import Data from './components/Data';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Carousel />
       <Spending />
       <Perks />
+      <Data />
     </main>
   );
 };
