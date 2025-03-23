@@ -7,6 +7,7 @@ import Unbilled from './components/Unbilled';
 import Cards from './components/Cards';
 import Carousel from './components/Carousel';
 import Spending from './components/Spending';
+import Perks from './components/Perks';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Cards />
       <Carousel />
       <Spending />
+      <Perks />
     </main>
   );
 };
