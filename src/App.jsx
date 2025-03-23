@@ -6,6 +6,7 @@ import Features from './components/Features';
 import Unbilled from './components/Unbilled';
 import Cards from './components/Cards';
 import Carousel from './components/Carousel';
+import Spending from './components/Spending';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Unbilled />
       <Cards />
       <Carousel />
+      <Spending />
     </main>
   );
 };
