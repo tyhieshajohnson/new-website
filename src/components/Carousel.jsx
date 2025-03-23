@@ -31,7 +31,7 @@ const Carousel = () => {
                         <div className="sc-g6c3md-0 hdDaEA"></div>
 
                         <div className="hpTdVv">
-                            <img src="public/img/desktop/tap-hold.png"
+                            <img src="/img/desktop/tap-hold.png"
                             alt="tap hold" className="fBRsjM" />
                             <div className="lbxDUD">
                                 <p className="kkVKoh">PRESS AND HOLD
