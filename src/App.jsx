@@ -10,7 +10,7 @@ import Spending from './components/Spending';
 import Perks from './components/Perks';
 import Data from './components/Data';
 import Code from './components/Code';
-import FAQ from './components/FAQ';
+import Faq from './components/Faq';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
       <Perks />
       <Data />
       <Code />
-      <FAQ />
+      <Faq />
       <Footer />
     </main>
   );
