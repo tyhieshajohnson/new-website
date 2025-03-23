@@ -21,6 +21,39 @@ body {
     background-image: linear-gradient(to right, black, gray-400, black);
 }
 
+/* Default styles for the unbilled section */
+.unbilled-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unbilled-image {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .unbilled-section {
+        height: auto;
+    }
+
+    .unbilled-image {
+        width: 440px;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
 .jWXgbn {
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;

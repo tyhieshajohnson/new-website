@@ -14,7 +14,6 @@ const Unbilled = () => {
 
     useEffect(() => {
         const triggerElement = triggerRef.current;
-        const sectionElement = sectionRef.current;
 
         const handleWheel = (event) => {
             if (!isActive) return;
@@ -24,7 +23,9 @@ const Unbilled = () => {
             const delta = Math.sign(event.deltaY);
             const newIndex = visibleIndex + delta;
 
-            setVisibleIndex(Math.min(Math.max(newIndex, 0), totalImages - 1));
+            setVisibleIndex((prevIndex) => {
+                return Math.min(Math.max(prevIndex + delta, 0), totalImages - 1);
+            });
         };
 
         const observer = new IntersectionObserver(
@@ -57,14 +58,14 @@ const Unbilled = () => {
     }, [isActive, visibleIndex, totalImages]);
 
     return (
-        <section ref={sectionRef} className="relative h-dvh w-screen overflow-x-hidden">
+        <section ref={sectionRef} className="unbilled-section">
             <div id="unbilled-trigger" ref={triggerRef}>
                 {isActive && (
-                    <div>
+                    <div className="image-container">
                         <img
                             src={images[visibleIndex]}
                             alt={`Image ${visibleIndex + 1}`}
-                            className="w-full h-full object-cover"
+                            className="unbilled-image"
                         />
                     </div>
                 )}

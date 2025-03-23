@@ -46,6 +46,17 @@ export default {
           custom-gray: "rgba(209, 213, 219, 0.5)",
         },
       },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      },
+      height: {
+        '80vh': '80vh',
+        '60vh': '60vh',
+      },
+      },
     },
   },
   plugins: [],

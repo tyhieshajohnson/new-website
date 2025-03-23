@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Features from './components/Features';
 import Unbilled from './components/Unbilled';
+import Cards from './components/Cards';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <Features />
       <Unbilled />
+      <Cards />
     </main>
   );
 };
