@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FAQ = () => {
+const Faq = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -39,35 +39,26 @@ const FAQ = () => {
     ];
 
     return (
-        <div className="sc-1w5gd28-0 kjtGmc" style={{ backgroundColor: 'black', color: 'white', padding: '20px' }}>
+        <div className="faq-container">
             <div
-                className="sc-1w5gd28-1 jHlZhV"
+                className="faq-header"
                 onClick={toggleDropdown}
-                style={{
-                    cursor: 'pointer',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                    width: '100%'
-                }}
             >
                 FREQUENTLY ASKED QUESTIONS
                 <img
                     src="https://web-images.credcdn.in/v2/_next/assets/images/faq/down-arrow.png"
-                    className={`sc-1w5gd28-2 bXasli ${isDropdownOpen ? 'rotate' : ''}`}
+                    className={`${isDropdownOpen ? 'rotate' : ''}`}
                     alt="dropdown arrow"
-                    style={{ width: '16px', height: '16px', transition: 'transform 0.3s ease', marginLeft: '10px' }}
                 />
             </div>
             {isDropdownOpen && (
-                <div className="sc-1w5gd28-4 lcHOdy">
+                <div className="faq-content">
                     {faqData.map((faq, index) => (
-                        <div key={index} className="sc-1w5gd28-5 cRINdb">
-                            <div className="sc-1w5gd28-6 ekFkoD">
+                        <div key={index} className="faq-item">
+                            <div className="faq-question">
                                 {faq.question}
                             </div>
-                            <div className="sc-1w5gd28-7 ccXGfa">
+                            <div className="faq-answer">
                                 {faq.answer}
                             </div>
                         </div>
@@ -78,4 +69,4 @@ const FAQ = () => {
     );
 };
 
-export default FAQ;
+export default Faq;
