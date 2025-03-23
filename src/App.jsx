@@ -5,6 +5,7 @@ import About from './components/About';
 import Features from './components/Features';
 import Unbilled from './components/Unbilled';
 import Cards from './components/Cards';
+import Carousel from './components/Carousel';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Features />
       <Unbilled />
       <Cards />
+      <Carousel />
     </main>
   );
 };
