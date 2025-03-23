@@ -21,13 +21,11 @@ body {
     background-image: linear-gradient(to right, black, gray-400, black);
 }
 
-/* Default styles for the unbilled section */
 .unbilled-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0; /* Optional: Add a background color */
 }
 
 .image-container {
@@ -51,6 +49,137 @@ body {
         width: 440px;
         height: 500px;
         object-fit: cover;
+    }
+}
+
+.gGwbWp {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 125px;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dYlzCk {
+    background: linear-gradient(170deg, rgb(0, 0, 0), rgb(85, 85, 85)) text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fquCfu {
+    font-family: denton;
+    font-size: 67px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    line-height: 65px;
+    text-align: left;
+}
+
+.hrudQH {
+    margin-bottom: calc(40px);
+}
+
+.hHnUWF {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.hdDaEA {
+    margin-bottom: calc(15px);
+}
+
+.hpTdVv {
+    display: flex;
+    align-items: flex-start;
+}
+
+.edROEC {
+    user-select: none;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fBRsjM {
+    width: 32px;
+    height: 32px;
+}
+
+.lbxDUD {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.kkVKoh {
+     font-family: gilroy-bold;
+     font-size: 15px;
+     font-weight: initial;
+     letter-spacing: 2.15px;
+     line-height: 28px;
+ }
+
+.buBswu {
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: initial;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    opacity: 0.6;
+}
+
+.edROEC {
+    user-select: none;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .dYlzCk {
+        background: linear-gradient(170deg, rgb(0, 0, 0), rgb(85, 85, 85)) text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .czXzVu {
+        padding: 0px 30px;
+    }
+
+    .fquCfu {
+        font-size: 40px;
+        line-height: 39px;
+    }
+
+    .hHnUWF {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20;
+    }
+
+    .carousel-item {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+    }
+
+    .hHnUWF::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hHnUWF {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .gGwbWp {
+        padding: 100px 0px;
     }
 }
 
