@@ -11,6 +11,7 @@ import Perks from './components/Perks';
 import Data from './components/Data';
 import Code from './components/Code';
 import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <Data />
       <Code />
       <FAQ />
+      <Footer />
     </main>
   );
 };
