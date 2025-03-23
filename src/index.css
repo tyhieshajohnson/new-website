@@ -323,6 +323,78 @@ body {
     padding: 125px;
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
+
+.jHlZhV {
+    font-family: gilroy;
+    cursor: pointer;
+    height: 20vh;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 39.33px;
+    letter-spacing: 8.4px;
+    display: flex
+;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hmmEmE {
+    border: none;
+    background: transparent;
+    color: transparent;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.cRINdb {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ekFkoD {
+    font-family: gilroy;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.ccXGfa {
+    font-family: gilroy;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+
+body {
+    -webkit-tap-highlight-color: transparent;
+    width: 100vw;
+    text-size-adjust: none;
+}
+
+.cRINdb > :first-child {
+    margin-top: 0px;
+}
+
 .ibYucQ {
     top: 55%;
 }

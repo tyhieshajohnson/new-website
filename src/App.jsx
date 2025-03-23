@@ -10,6 +10,7 @@ import Spending from './components/Spending';
 import Perks from './components/Perks';
 import Data from './components/Data';
 import Code from './components/Code';
+import FAQ from './components/FAQ';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Perks />
       <Data />
       <Code />
+      <FAQ />
     </main>
   );
 };
